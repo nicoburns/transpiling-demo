@@ -9,7 +9,6 @@
     "serve": "http-server"
   },
   "dependencies": {
-    "lodash": "^3.10.1",
     "react": "^0.14.2",
     "react-dom": "^0.14.2"
   },
