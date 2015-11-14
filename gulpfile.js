@@ -48,6 +48,10 @@ function createBrowserifyObjects(rootFile, destinationDirectory) {
   var destinationName = parts.pop();
   var destinationDirectory = parts.join('/');
 
+  parts = rootFile.src.split('/');
+  var sourceName = parts.pop();
+  var sourceDirectory = parts.join('/');
+
   // Create file-watching enabled Browserify bundler object:
   //   1. Create Browserify object, passing in the path of the top-level source file
   //   2. Add 'Babelify' transform to Browserify object configuration
