@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Transpiling Demo | Bristol JS Workshop</title>
+	<!--<link rel="stylesheet" href="css/style.css">-->
+</head>
+
+<body id="home">
+
+	<h1>Transpiling Demo | Bristol JS Workshop</h1>
+
+	<pre><code id="output">Output will appear here...
+</code></pre>
+
+	<!-- Babel polyfill -->
+	<script src="dist/polyfill.min.js" type="text/javascript"></script>
+	
+	<!-- Basic log function used in other scripts -->
+	<script type="text/javascript">
+		var outputElement = document.getElementById('output');
+		function log(text) {
+			outputElement.innerHTML += text + "\n";
+			outputElement.scrollTop = outputElement.scrollHeight;
+		}
+	</script>
+
+	<!-- Load script from querystring name -->
+	<script type="text/javascript">
+		var scriptName = "dist/" + window.location.search.replace('?', '') + ".js";
+		log ("Loading script " + scriptName);
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = scriptName;
+		document.body.appendChild(script);
+	</script>
+
+	
+
+	<!-- 
+	<script src="dist/app.js" type="text/javascript"></script>-->
+
+</body>
+</html>
