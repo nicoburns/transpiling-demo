@@ -28,6 +28,7 @@ var config = {
     files: [
       {src: 'src/arrow.js', dest: 'dist/arrow.js'},
       {src: 'src/react.js', dest: 'dist/react.js'},
+      {src: 'src/async.js', dest: 'dist/async.js'},
       {src: 'src/app/index.js', dest: 'dist/app.js'},
     ]
     ,
@@ -47,10 +48,6 @@ function createBrowserifyObjects(rootFile, destinationDirectory) {
   var parts = rootFile.dest.split('/');
   var destinationName = parts.pop();
   var destinationDirectory = parts.join('/');
-
-  parts = rootFile.src.split('/');
-  var sourceName = parts.pop();
-  var sourceDirectory = parts.join('/');
 
   // Create file-watching enabled Browserify bundler object:
   //   1. Create Browserify object, passing in the path of the top-level source file

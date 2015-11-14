@@ -14,22 +14,7 @@ var helloWorld = function () {
 	}, 2000);
 }
 
-function wait (ms) {
-	return new Promise ((resolve, reject) => setTimeout(resolve, ms))
-}
-
 helloWorld();
 
-// async function infiniteLog () {
-// 	let i = 1;
-// 	while(true) {
-// 		await wait (1000);
-// 		log("[" + i + "] Time: " + performance.fnow());
-// 		i++;
-// 		await wait(500);
-// 		log("Frog");
-// 	}
-// }
 
-// infiniteLog();
 
