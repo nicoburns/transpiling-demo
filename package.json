@@ -5,10 +5,13 @@
   "license": "MIT",
   "scripts": {
     "build": "gulp build",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "serve": "http-server"
   },
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
   },
   "devDependencies": {
     "babel": "^6.1.18",
@@ -19,6 +22,7 @@
     "browserify": "^12.0.1",
     "gulp": "^3.9.0",
     "gulp-sourcemaps": "^1.5.2",
+    "http-server": "^0.8.5",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.4.0"

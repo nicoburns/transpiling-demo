@@ -12,7 +12,7 @@ var object = {
 	getColorLaterArrow: function () {
 		setTimeout(() => {
 			console.log ("lalalala");
-			log(this.getColorNo());
+			log(this.getColorNow());
 		}, 500)
 	}
 }

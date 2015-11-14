@@ -26,8 +26,9 @@ var config = {
 
     // Each of these files results in a transpiled javascript file
     files: [
-      {src: 'src/app/index.js', dest: 'dist/app.js'},
       {src: 'src/arrow.js', dest: 'dist/arrow.js'},
+      {src: 'src/react.js', dest: 'dist/react.js'},
+      {src: 'src/app/index.js', dest: 'dist/app.js'},
     ]
     ,
 
