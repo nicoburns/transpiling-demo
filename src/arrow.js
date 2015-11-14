@@ -4,19 +4,20 @@ var object = {
 	getColorNow: function () {
 		log(this.color);
 	},
-	getColorLater: function () {
-		setTimeout(function () {
-			window.log(this.color);
-		}, 500)
-	},
-	getColorLaterArrow: function () {
-		setTimeout(() => {
-			console.log ("lalalala");
-			log(this.getColorNohejfbewf());
-		}, 500)
-	}
+	// getColorLater: function () {
+	// 	setTimeout(function () {
+	// 		window.log(this.color);
+	// 	}, 500)
+	// },
+	// getColorLaterArrow: function () {
+	// 	setTimeout(() => {
+	// 		log(this.color);
+	// 	}, 500)
+	// }
 }
 
-object.getColorNow();
-object.getColorLater();
-object.getColorLaterArrow();
+// object.getColorNow();
+// object.getColorLater();
+// object.getColorLaterArrow();
+
+//export default object;
